@@ -25,7 +25,7 @@
 		 $object = Object for the REST Call	
 		 $enumout  = dynamic Variable with all Loxone Outputs
 		 $enumin = dynamic Variable with all Loxone Inputs
-		 $
+		 
 #>
 
 
