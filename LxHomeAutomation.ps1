@@ -38,7 +38,7 @@
 	static [int] $ErrorCode
 
 	[System.Object]$cred
-	[string]$server = ""
+	[string]$server = "192.168.101.150"
 	[string]$Object
 	[xml]$lastResult
 
