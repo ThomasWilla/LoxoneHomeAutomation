@@ -18,6 +18,7 @@
     .LINK
         Useful Link to ressources or others.
 
+<<<<<<< HEAD
 	.PARAMETER	Server
 		IP or DNS Address from the Miniserver
 	.PARAMETER	cred 
@@ -42,6 +43,17 @@
 
 		 #>
 
+=======
+    .Parameter ParameterName
+		 $Server = Address from the Miniserver
+		 $cred =  Miniserver Credentinal mit Secure Sting Password
+		 $LastResult = Last Raw Response Result from the Miniserver
+		 $object = Object for the REST Call	
+		 $enumout  = dynamic Variable with all Loxone Outputs
+		 $enumin = dynamic Variable with all Loxone Inputs
+
+#>
+>>>>>>> ebff24f046a7c22572c1c2c2dcf1ea0f702e3286
 
 
 
