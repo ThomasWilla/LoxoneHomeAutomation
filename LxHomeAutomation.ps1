@@ -3,7 +3,7 @@
     .SYNOPSIS
 	   This ist a Claas for Managed the Loxone Miniserver over REST
 	   
-	   Use the Class 
+	  Use the Class 
  	  $LxHomeAutomation = New-Object LxHomeAutomation -ArgumentList "Username","Plain Password"
 
      .DESCRIPTION
@@ -18,6 +18,32 @@
     .LINK
         Useful Link to ressources or others.
 
+<<<<<<< HEAD
+	.PARAMETER	Server
+		IP or DNS Address from the Miniserver
+	.PARAMETER	cred 
+		Powershell Credentinal with Secure Sting Password for the Miniserver
+	.PARAMETER	LastResult 
+		Last Raw Response Result from the Miniserver (REST)
+	.PARAMETER	Object 
+		Object for the Function Calls
+	.PARAMETER	enumout 
+		Dynamic Variable with all Loxone Outputs (fill up automatic after Class Initialize)
+	.PARAMETER	enumin 
+		Dynamic Variable with all Loxone Inputs (fill up automatic after Class Initialize)
+
+	.EXAMPLE
+ 		Class Initalize Varriation 1
+   	 	$LxHomeAutomation = New-Object LxHomeAutomation -ArgumentList "Username","Plain Password"
+	.EXAMPLE
+		Class Initalize Varriation 2
+		$LxHomeautomation = [LxHomeAutomation]::new("user","PW as plaintext")
+	.EXAMPLE 
+ 		$CLASS.RESTControllIO("on"/"off"/"impuls"/"state","IO")
+
+		 #>
+
+=======
     .Parameter ParameterName
 		 $Server = Address from the Miniserver
 		 $cred =  Miniserver Credentinal mit Secure Sting Password
@@ -27,6 +53,7 @@
 		 $enumin = dynamic Variable with all Loxone Inputs
 
 #>
+>>>>>>> ebff24f046a7c22572c1c2c2dcf1ea0f702e3286
 
 
 
@@ -38,7 +65,7 @@
 	static [int] $ErrorCode
 
 	[System.Object]$cred
-	[string]$server = "192.168.101.150"
+	[string]$server = "192.168."
 	[string]$Object
 	[xml]$lastResult
 
