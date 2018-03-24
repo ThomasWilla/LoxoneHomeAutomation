@@ -25,6 +25,7 @@
 		 $object = Object for the REST Call	
 		 $enumout  = dynamic Variable with all Loxone Outputs
 		 $enumin = dynamic Variable with all Loxone Inputs
+
 #>
 
 
@@ -37,7 +38,7 @@
 	static [int] $ErrorCode
 
 	[System.Object]$cred
-	[string]$server = ""
+	[string]$server = "192.168.101.150"
 	[string]$Object
 	[xml]$lastResult
 
@@ -209,7 +210,7 @@
 	}
 
 
-	[object] RESTControllIO ($verb, $Object)
+	[object] RESTControllIO ($verb, $IO)
 	{
 		<# 
         Possible Value:
@@ -234,7 +235,9 @@
         switch ($verb){
         
         "get" {$verb = "state";break}
-        "impuls" {$verb = "impuls";break}
+		"impuls" {$verb = "impuls";break}
+		"on" {$verb = "ein";break}
+		"off" {$verb = "aus";break}
 
         default{
         $verb = "state"
@@ -242,7 +245,7 @@
         
         }
             
-            $IO = ($Object.Substring(0, $Object.Length -39))    
+            #$IO = ($Object.Substring(0, $Object.Length -39))    
                         
 		    $this.lastResult = Invoke-WebRequest -Uri "http://$srv/dev/sps/io/$IO/$verb" -Credential $this.cred
                           

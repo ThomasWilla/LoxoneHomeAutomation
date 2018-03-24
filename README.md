@@ -11,7 +11,10 @@ Build a new LxHomeAutomation Object and connect to the Loxone Server. The defaul
 Powershell 5
 
 ```
-$LxHomeAutomation = New-Object LxHomeAutomation -ArgumentList "Password as plaintext"``
+$LxHomeAutomation = New-Object LxHomeAutomation -ArgumentList "user,Password as plaintext"
+or
+$LxHomeautomation = [LxHomeAutomation]::new("user","PW as plaintext")
+
 ```
 
 ### Installing
