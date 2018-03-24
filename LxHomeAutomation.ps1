@@ -39,7 +39,9 @@
 		$LxHomeautomation = [LxHomeAutomation]::new("user","PW as plaintext")
 	.EXAMPLE 
  		$CLASS.RESTControllIO("on"/"off"/"impuls"/"state","IO")
-#>
+
+		 #>
+
 
 
 
