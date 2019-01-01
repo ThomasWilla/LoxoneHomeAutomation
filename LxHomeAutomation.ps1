@@ -253,7 +253,7 @@
 		"off" {$verb = "aus";break}
 
         default{
-        $verb = "state"
+        $verb = $verb
         }
         
         }
